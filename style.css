@@ -111,13 +111,53 @@ h1{
     box-shadow: 0 6px 12px rgba(255, 0, 0, 0.8); 
   }
 
-  
+  /* ************ */
+.slide_container i{
+    font-size: 2rem;
+}
 
+.slide_container {
+    position: relative;
+    width: 70%;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide_container .slide {
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    left: 25px;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.slide_container:hover .slide {
+    width: 100%;
+}
+
+
+
+.slide_container .slide .text {
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.slide_container:hover{
+    transform: scale(1.1);
+}
 
 /* ----------------------------left------------------------------- */
-
-
-
 
 
 
