@@ -15,7 +15,7 @@ body {
 /* ------------------------header bar----------------------------- */
 .header_container{
     width: 100%;
-    background-color: black;
+    position: relative;
     height: 100px;
     top: 0;
     position: fixed;
@@ -31,23 +31,24 @@ nav{
     flex-wrap: wrap;
     
 }
-.logo{
-    width: 12rem;
-   
-}
+
 #menu{
-    margin-left: 30rem;
+    margin-left: 12.6rem;
+    margin-top: -2rem;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin-right: 6rem;
+    font-weight: 600;
+    
 }
 nav ul li a{
-    color: #fff;
+    color: #0a0a0a;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position:relative
+    
 }
 nav ul li a::after{
     content: '';
@@ -65,8 +66,8 @@ nav ul li a:hover::after{
 }
 
 .logo{
-    background-color: #cfcaea;
-    width: 4rem;
+    margin-top: 1rem;
+    width: 8rem;
     margin-left: 3rem;
 }
 /* ------------------------header bar----------------------------- */
@@ -76,15 +77,13 @@ nav ul li a:hover::after{
 /* ----------------------------left------------------------------- */
 .sidebar {
     width: 25%;
-    height: 90vh;
+    height: 100vh;
     padding: 20px;
-    /* background-color: #777; */
-    margin-top: 5%;
     box-shadow: 10px 0 40px rgba(189, 84, 84, 0.6);
 }
 
 h1{
-    margin-top: 7rem;
+    margin-top: 12rem;
     margin-left: 2rem;
     font-family: Arial, sans-serif;
 }
@@ -136,11 +135,6 @@ h1{
 .wrapper {
     width: 850px;
     
-    /* position: absolute; */
-    /* transform: translate(-50%, -50%); */
-    /* top: 60%;
-    left: 50%; */
-    
   }
   
   .quote-container {
@@ -185,48 +179,56 @@ h1{
     }
   }
   
-  /* .quote-container:after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 140%;
-    background-color: #cfcaea;
-    z-index: -1;
-    top: -20%;
-    left: 10%;
-  } */
 
+  /* ------------------------------buttons---------- */
 
   .controls {
-    
     display: flex;
     align-items: center;
     margin-top: 4rem;
   }
-  
-  #prevBtn{
-    
+  .button1{
     z-index: 20;
-  
+    margin-top: -10.2rem;
+    background-color: rgb(105,113,114,0.6);
+    border: none;
+    padding: 5px;
+    border-radius: 0.5rem;
+    transition: transform 0.4s ease-in-out;
   }
-  #nextBtn{
-    
-    z-index: 20;
-  
+  .next {
+    margin-left: 18rem;
+  }
+  .prev{
+    margin-left: 0.5rem;
+  }
+  .next i, .prev i{
+    width: 5rem;
+    font-size: 1.3rem;
   }
   .random{
-    z-index: 20;
+    width: 7rem;
+    font-size: 1.1rem;
+    margin-left: 15.5rem;
   }
+
+  .button1:hover {
+    background-color: rgba(112, 117, 119, 0.8);
+    
+  }
+  .button1:active {
+     transform: scale(0.9); 
+   }
   
 
-  
+
   .interest{
     margin-top: -30rem;
-    margin-left: 37rem;
+    margin-left: -4rem;
     display: flex;
     flex-direction: column;
     z-index: 20;
-    
+    box-shadow: 0 13px 20px rgba(7, 7, 7, 0.4);
     border-radius: 2rem;
     background-color: rgb(105,113,114,0.6);
     
@@ -240,6 +242,9 @@ h1{
     margin-right: 0.4rem;
     transition: transform 0.3s ease-in-out;
   }
+  .decrease{ 
+    margin-bottom: 1rem;
+  }
   .button2:hover {
     transform: scale(1.1);
     color:white;
@@ -247,12 +252,9 @@ h1{
   .button2:active {
      transform: scale(0.9); 
    }
-  .increase,.decrease{
-    font-size: 1.5rem;
-  }
-  .decrease{
-    margin-bottom: 1rem;
-  }
+
+  
+  
   /* ---------------------------------right-------------------- */
 
 
@@ -261,14 +263,14 @@ h1{
 
   .switch {
     position: absolute;
-    top: 20px; /* Adjust the top position to move the toggle to the top */
-    right: 20px; /* Adjust the left position to move the toggle to the left */
+     margin-top: -1.5rem;
+    right: 4rem; 
   }
   
   
   label {
-    width: 80px; /* Adjust the width of the toggle */
-    height: 40px; /* Adjust the height of the toggle */
+    width: 60px; /* Adjust the width of the toggle */
+    height: 30px; /* Adjust the height of the toggle */
     position: relative;
     display: block;
     background: #ebebeb;
@@ -279,8 +281,8 @@ h1{
   
   label:after {
     content: "";
-    width: 30px; /* Adjust the width of the inner toggle */
-    height: 30px; /* Adjust the height of the inner toggle */
+    width: 20px; /* Adjust the width of the inner toggle */
+    height: 20px; /* Adjust the height of the inner toggle */
     position: absolute;
     top: 5px; /* Adjust the top position to center vertically */
     left: 5px; /* Adjust the left position to center horizontally */
@@ -301,7 +303,7 @@ h1{
   }
   
   input:checked + label:after {
-    left: 70px; /* Adjust the left position to move the toggle */
+    left: 54px; /* Adjust the left position to move the toggle */
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
   }
@@ -312,20 +314,22 @@ h1{
   }
   
   label:active:after {
-    width: 40px; /* Adjust the width on active state */
+    width: 30px; /* Adjust the width on active state */
   }
   
   .sun{
+    font-size: 13px;
     position: absolute;
-    margin-top: -1.8rem;
-    margin-left: 0.7rem;
+    margin-top: -1.4rem;
+    margin-left: 0.6rem;
     
   }
   
   .moon{
+    font-size: 13px;
+    margin-top: -1.3rem;
     position: absolute;
-    margin-top: -1.7rem;
-    margin-left: 3.5rem;
+    margin-left: 2.7rem;
     
   }
 
