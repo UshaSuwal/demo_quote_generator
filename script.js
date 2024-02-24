@@ -66,6 +66,7 @@ randomBtn.addEventListener('click', () => {
 darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
     toggleGlowAnimation();
+    updateImageSource();
 });
 
 function toggleGlowAnimation() {
@@ -78,6 +79,19 @@ function toggleGlowAnimation() {
         quoteContainer.classList.add('black-glow');
         quoteContainer.classList.remove('white-glow');
     }
+}
+
+function updateImageSource() {
+    const logoImage = document.getElementById('logoImage');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+
+    // Set the image source based on dark mode
+    logoImage.src = isDarkMode ? 'images/whiteBook.png' : 'images/book.png';
+
+    const logo = document.getElementById('logo');
+
+    // Set the image source based on dark mode
+    logo.src = isDarkMode ? 'images/whiteLogo.png' : 'images/logo.png';
 }
 
 increaseFontBtn.addEventListener('click', () => {

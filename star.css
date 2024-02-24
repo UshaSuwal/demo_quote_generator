@@ -20,7 +20,7 @@
   .gradient-circle {
     position: absolute;
     border-radius: 50%;
-    background: radial-gradient(ellipse at bottom left, rgba(255, 183, 182, 0.8), transparent); /* Adjust the color and transparency as needed */
+    background: radial-gradient(ellipse at bottom left, rgba(132, 152, 231,0.8), transparent); /* Adjust the color and transparency as needed */
     filter: blur(50px); 
     z-index: -1;
   }
@@ -54,8 +54,8 @@
   }
   
   .circle-5 {
-    width: 300px; /* Adjust the size of the circle as needed */
-    height: 200px; /* Adjust the size of the circle as needed */
+    width: 200px; /* Adjust the size of the circle as needed */
+    height: 150px; /* Adjust the size of the circle as needed */
     top: 10px; /* Adjust the position of the circle from the bottom */
     right: 100px; /* Adjust the position of the circle from the left */
   }

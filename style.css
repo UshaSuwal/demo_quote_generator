@@ -19,7 +19,6 @@ body {
     height: 100px;
     top: 0;
     position: fixed;
-    color: white;
     display: flex;
 
     
@@ -33,7 +32,7 @@ nav{
 }
 
 #menu{
-    margin-left: 24rem;
+    margin-left: 20rem;
     margin-top: 0.5rem;
 }
 nav ul li{
@@ -66,8 +65,8 @@ nav ul li a:hover::after{
 }
 
 .logo{
-    margin-top: 1rem;
-    width: 8rem;
+    /* margin-top: 1rem; */
+    width: 12rem;
     margin-left: 3rem;
 }
 /* ------------------------header bar----------------------------- */
@@ -79,7 +78,7 @@ nav ul li a:hover::after{
     width: 25%;
     height: 100vh;
     padding: 20px;
-    box-shadow: 3px 0 20px rgba(189, 84, 84, 0.6);
+    box-shadow: 3px 0 20px rgba(132, 219, 231, 0.4);    
 }
 
 h1{
@@ -104,6 +103,7 @@ h1{
     outline: none;
     margin-left: 2.5rem;
     margin-top: 2rem;
+    color: rgb(0, 0, 0,0.6);
   }
 
 
@@ -131,13 +131,18 @@ h1{
     margin-top: 20%;
 }
 
-
+.image_container img{
+    position: absolute;
+    width: 20rem;
+    margin-top: -9.5rem;
+}
 .wrapper {
     width: 850px;
     
   }
   
   .quote-container {
+    position: relative;
     width: 85%;
     background-color: rgba(132, 219, 231, 0.4);    
     padding-top: 50px;
@@ -251,7 +256,7 @@ h1{
   }
   .button2:hover {
     transform: scale(1.1);
-    color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255,0.8);
   }
   .button2:active {
      transform: scale(0.9); 
@@ -351,6 +356,12 @@ h1{
   
   .dark-mode .gradient-circle{
     background: none
+  }
+  .dark-mode nav ul li a {
+    color: #f3f3f3;
+  }
+  .dark-mode .quote-container {
+    background-color: rgba(169, 224, 232, 0.6);    
   }
   /* ----------------dark mode css------------ */
   
