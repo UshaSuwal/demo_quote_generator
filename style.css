@@ -75,7 +75,7 @@ nav ul li a:hover::after{
 
 /* ----------------------------left------------------------------- */
 .sidebar {
-    width: 30%;
+    width: 25%;
     height: 90vh;
     padding: 20px;
     /* background-color: #777; */
@@ -134,7 +134,7 @@ h1{
 
 
 .wrapper {
-    width: 100%;
+    width: 850px;
     
     /* position: absolute; */
     /* transform: translate(-50%, -50%); */
@@ -146,7 +146,10 @@ h1{
   .quote-container {
     width: 85%;
     background-color: rgb(206,241,245);
-    padding: 50px 40px;
+    padding-top: 50px;
+    padding-right: 95px;
+    padding-bottom: 50px;
+    padding-left: 20px;
     
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     /* position: relative; */
@@ -215,12 +218,41 @@ h1{
     z-index: 20;
   }
   
-  .interest{
-    
-    
-    z-index: 20;
-  }
+
   
+  .interest{
+    margin-top: -30rem;
+    margin-left: 37rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    
+    border-radius: 2rem;
+    background-color: rgb(105,113,114,0.6);
+    
+  }
+  .button2{
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background: none;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  .button2:hover {
+    transform: scale(1.1);
+    color:white;
+  }
+  .button2:active {
+     transform: scale(0.9); 
+   }
+  .increase,.decrease{
+    font-size: 1.5rem;
+  }
+  .decrease{
+    margin-bottom: 1rem;
+  }
   /* ---------------------------------right-------------------- */
 
 
