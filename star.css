@@ -1,0 +1,87 @@
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: glow 1s infinite alternate;
+    z-index: -1;
+  }
+  
+  @keyframes glow {
+    from {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+  }
+  
+  .gradient-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at bottom left, rgba(255, 183, 182, 0.8), transparent); /* Adjust the color and transparency as needed */
+    filter: blur(50px); 
+    z-index: -1;
+  }
+  
+  .circle-1 {
+    width: 300px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    bottom: 10px; /* Adjust the position of the circle from the bottom */
+    left: 100px; /* Adjust the position of the circle from the left */
+  }
+  
+  .circle-2 {
+    width: 250px; /* Adjust the size of the circle as needed */
+    height: 90px; /* Adjust the size of the circle as needed */
+    bottom: 20px; /* Adjust the position of the circle from the bottom */
+    left: 580px; /* Adjust the position of the circle from the left */
+  }
+  
+  .circle-3 {
+    width: 200px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    bottom: 10px; /* Adjust the position of the circle from the bottom */
+    left: 400px; /* Adjust the position of the circle from the left */
+  }
+  
+  .circle-4 {
+    width: 100px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    top: 60px; /* Adjust the position of the circle from the bottom */
+    right: 10px; /* Adjust the position of the circle from the left */
+  }
+  
+  .circle-5 {
+    width: 300px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    top: 10px; /* Adjust the position of the circle from the bottom */
+    right: 100px; /* Adjust the position of the circle from the left */
+  }
+  
+  .circle-6 {
+    width: 250px; /* Adjust the size of the circle as needed */
+    height: 90px; /* Adjust the size of the circle as needed */
+    top: 20px; /* Adjust the position of the circle from the bottom */
+    right: 580px; /* Adjust the position of the circle from the left */
+  }
+  
+  .circle-7 {
+    width: 200px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    top: 300px; /* Adjust the position of the circle from the bottom */
+    right: 40px; /* Adjust the position of the circle from the left */
+  }
+  .circle-8 {
+    width: 200px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    bottom: 200px; /* Adjust the position of the circle from the bottom */
+    left: 100px; /* Adjust the position of the circle from the left */
+  }
+  .circle-9 {
+    width: 100px; /* Adjust the size of the circle as needed */
+    height: 200px; /* Adjust the size of the circle as needed */
+    bottom: 60px; /* Adjust the position of the circle from the bottom */
+    left: 10px; /* Adjust the position of the circle from the left */
+  }

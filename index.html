@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="star.css" />
+    <link rel="stylesheet" href="background.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/14dea2b7a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header_container">
+      <nav>
+        <img src="images/logo3.png" class="logo" alt="logo" />
+        <ul id="menu">
+            <li><a href="#hero">Premium</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="gradient-circle circle-1"></div>
+      <div class="gradient-circle circle-2"></div>
+      <div class="gradient-circle circle-3"></div>
+      <div class="gradient-circle circle-4"></div>
+
+      <div class="gradient-circle circle-5"></div>
+      <div class="gradient-circle circle-6"></div>
+      <div class="gradient-circle circle-7"></div>
+      <div class="gradient-circle circle-8"></div>
+      <div class="gradient-circle circle-9"></div>
+
+      <div class="bg_icon">
+        <div class="icon icon1"></div>
+        <div class="icon icon2"></div>
+        <div class="icon icon3"></div>
+        <div class="icon icon4"></div>
+        <div class="icon icon5"></div>
+      </div>
+
+      <div class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <label for="darkModeToggle"></label>
+        <i class="fa-regular fa-sun sun"></i>
+        <i class="fa-solid fa-moon moon"></i>
+      </div>
+
+      <div class="sidebar">
+        <h1>Quote Generator</h1>
+        <p>"EMPOWER YOUR THOUGHT. ILLUMINATE YOUR SOUL"</p>
+        <div class="category_container">
+          <select id="categorySelect">
+            <option value="" style="display: none">Choose a category</option>
+            <option value="inspiration">Inspiration</option>
+            <option value="science">Science</option>
+            <option value="inspiration">Life</option>
+            <option value="science">Social</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="main-content">
+      <div class="wrapper">
+        <div class="quote-container" id="quoteContainer">
+          <p class="quote" id="quoteText"></p>
+          <p class="author" id="authorNameContent"></p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn">Previous</button>
+        <span class="random"><button id="randomBtn">Random</button></span>
+        <button id="nextBtn">Next</button>
+
+        <div class="interest">
+          <button class="read button2"><i class="fa-solid fa-volume-high" id="readBtn"></i></button>
+          <button class="copy button2"><i class="fa-regular fa-copy" id="copyBtn"></i></button>
+          <button id="increaseFontBtn" class="button2">+</button>
+          <button id="decreaseFontBtn" class="button2">-</button>
+        </div>
+
+      </div>
+      </div>
+
+      <div id="copiedText"></div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

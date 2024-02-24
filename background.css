@@ -1,0 +1,47 @@
+.icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    animation: rotate 10s linear infinite;
+  }
+  
+  .icon1 {
+    top: 18%;
+    left: 20%;
+    background-image: url('images/butterfly.png');
+  }
+  
+  .icon2 {
+    top: 50%;
+    left: 13%;
+    background-image: url('images/flower.png');
+  }
+  
+  .icon3 {
+    top: 30%;
+    right: 20%;
+    background-image: url('images/moon.png');
+  }
+  .icon4 {
+    top: 50%;
+    right: 10%;
+    background-image: url('images/star.png');
+  }
+  .icon5 {
+    top: 70%;
+    left: 22%;
+    background-image: url('images/sun.png');
+  }
+  
+  /* Add more .icon(n) rules for additional icons */
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
