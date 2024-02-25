@@ -116,7 +116,7 @@ h1{
   100% { opacity: 0; }
 }
 
-.category_container select {
+/* .category_container select {
     border: 0.1px solid #3b3a3a;
     padding: 5px;
     font-size: 20px;
@@ -136,7 +136,7 @@ h1{
   .category_container select:hover {
     transform: scale(0.99);
     box-shadow: 0 8px 16px rgba(7, 114, 123, 0.644);
-  }
+  } */
 
   /* ****** > slide ****** */
 .slide_container i{
@@ -342,4 +342,39 @@ h1{
 
 
   
-  
+  /* Add or modify styles as needed */
+#customDropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
+}

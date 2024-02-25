@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="star.css" />
     <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="dark.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,14 +82,13 @@
           <span id="role"></span>
         </div>
 
-        <div class="category_container">
-          <select id="categorySelect">
-            <option value="" style="display: none">Choose a category</option>
-            <option value="inspiration">Inspiration</option>
-            <option value="science">Science</option>
-            <option value="inspiration">Life</option>
-            <option value="science">Social</option>
-          </select>
+        <div class="category_container" id="customDropdown">
+          <div class="dropdown-header" onclick="toggleDropdown()">Choose a category</div>
+          <ul class="dropdown-list" id="categoryList">
+            <li onclick="changeCategory('inspiration')">Inspiration</li>
+            <li onclick="changeCategory('science')">Science</li>
+            <!-- Add more categories as needed -->
+          </ul>
         </div>
 
         <div class="slide_container">

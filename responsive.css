@@ -1,0 +1,74 @@
+/* responsive.css */
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+        /* Allow scrolling on smaller screens */
+    }
+
+    .container {
+        flex-direction: column;
+
+    }
+
+    .header_container {
+        height: auto;
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        margin: 1rem;
+    }
+
+    /* --------------------------left */
+    /* .sidebar {
+        width: 100%;
+        padding: 10px;
+        margin-top: 1rem;
+        text-align: center;
+
+    } */
+
+    h1 {
+        margin-top: 15rem;
+
+    }
+
+    .image_container img {
+        margin: 10rem;
+        /* Center the image horizontally */
+        display: block;
+        /* Remove default inline behavior */
+        margin-top: -53rem;
+        /* Reset top margin */
+        width: 15rem;
+        max-width: 100%;
+    }
+
+    
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    
+}
