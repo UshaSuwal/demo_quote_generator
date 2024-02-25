@@ -11,9 +11,19 @@
     <link rel="stylesheet" href="star.css" />
     <link rel="stylesheet" href="background.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <script
       src="https://kit.fontawesome.com/14dea2b7a9.js"
@@ -61,8 +71,15 @@
       <!-- --------------------------------------left------------------------ -->
       <div class="sidebar">
         <h1>QUOTE QUEST</h1>
-        <p>"EMPOWER YOUR THOUGHT. ILLUMINATE YOUR SOUL"</p>
-        
+        <p>
+          Quotes at your fingertips <i class="fa-solid fa-hand-pointer"></i
+          ><br />
+        </p>
+        <div class="subQuote">
+          <span id="typed-text"></span><span class="cursor"></span>
+          <span id="role"></span>
+        </div>
+
         <div class="category_container">
           <select id="categorySelect">
             <option value="" style="display: none">Choose a category</option>
@@ -72,17 +89,14 @@
             <option value="science">Social</option>
           </select>
         </div>
-        
+
         <div class="slide_container">
-            <i class="fa-solid fa-greater-than"></i>
-            <div class="slide">
-                <div class="text">Have a nice day 😁</div>
-            </div>
+          <i class="fa-solid fa-greater-than"></i>
+          <div class="slide">
+            <div class="text">Have a nice day 😁</div>
+          </div>
         </div>
       </div>
-
-
-
 
       <!-- ---------------------right------------------ -->
       <div class="main-content">
@@ -109,12 +123,16 @@
             <button class="read button2">
               <i class="fa-solid fa-volume-high" id="readBtn"></i>
             </button>
-            <button class="copy button2" >
+            <button class="copy button2">
               <i class="fa-regular fa-copy" id="copyBtn"></i>
-              <i class="fa-solid fa-check" style="display: none;" id="checkBtn"></i>
+              <i
+                class="fa-solid fa-check"
+                style="display: none"
+                id="checkBtn"
+              ></i>
             </button>
             <button id="increaseFontBtn" class="button2 increase">
-              <i class="fa-solid fa-plus" ></i>
+              <i class="fa-solid fa-plus"></i>
             </button>
             <button id="decreaseFontBtn" class="button2 decrease">
               <i class="fa-solid fa-minus"></i>
@@ -123,11 +141,10 @@
         </div>
       </div>
 
-      
-
       <!-- <div id="copiedText"></div> -->
     </div>
 
     <script src="script.js"></script>
+    <script src="script2.js"></script>
   </body>
 </html>
