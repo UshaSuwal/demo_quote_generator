@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background-color 0.5s, color 0.5s;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .container {
@@ -264,7 +264,7 @@ h1{
     align-items: center;
     margin-top: 4rem;
   }
-  .button1{
+  /* .button1{
     z-index: 20;
     margin-top: -10.3rem;
     background-color: rgba(74, 74, 74, 0.77);
@@ -272,8 +272,8 @@ h1{
     padding: 5px;
     border-radius: 0.5rem;
     transition: transform 0.4s ease-in-out;
-  }
-  .next {
+  } */
+  /* .next {
     margin-left: 13.5rem;
   }
   .prev{
@@ -299,12 +299,30 @@ h1{
   .button1:active {
      transform: scale(0.9); 
    }
-  
+   */
+
+   .navigate{
+    flex-direction: row;
+    margin-top: -10.5rem;
+    z-index: 20;
+    margin-left: 4rem;
+   }
+   .button1{
+    color: white;
+    font-size: 1.1rem;
+    width: 7rem;
+    margin-right: 10rem;
+    background-color: rgba(74, 74, 74, 0.77);
+    border: none;
+    padding: 5px;
+    border-radius: 0.5rem;
+
+   }
 
 
   .interest{
     margin-top: -28rem;
-    margin-left: -4rem;
+    margin-left: -9rem;
     display: flex;
     flex-direction: column;
     z-index: 20;
@@ -375,9 +393,9 @@ h1{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 0;
-  margin: 0;
+  margin: 2px;
   list-style: none;
-  width: 90%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -387,7 +405,7 @@ h1{
 }
 
 .dropdown-list li:hover {
-  background-color: rgba(132, 210, 231, 0.482);  
+  color: rgb(3, 153, 207); 
 }
 
 .dropdown-header:hover {
