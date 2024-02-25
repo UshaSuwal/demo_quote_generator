@@ -349,25 +349,35 @@ h1{
   margin-left: 2rem;
   margin-top: 2rem;
   width: 60%;
+  
+    
 }
 
 .dropdown-header {
   cursor: pointer;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 18px;
+    background-color: #A9F5FF;
+    box-shadow: 0 8px 16px rgba(7, 7, 7, 0.6); 
+    
+    transition: transform 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    color: rgb(0, 0, 0,0.6);
+  
 }
 
 .dropdown-list {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(132, 219, 231, 0.4);  
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 100%;
+  width: 90%;
   z-index: 1;
 }
 
@@ -377,5 +387,10 @@ h1{
 }
 
 .dropdown-list li:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(132, 210, 231, 0.482);  
+}
+
+.dropdown-header:hover {
+  transform: scale(0.99);
+  box-shadow: 0 8px 16px rgba(7, 114, 123, 0.644);
 }
