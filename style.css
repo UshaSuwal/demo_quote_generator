@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background-color 0.5s, color 0.5s;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
@@ -202,11 +202,11 @@ h1{
 .image_container img{
     position: absolute;
     width: 25rem;
-    margin-top: -8.5rem;
-    margin-left: 3.5rem;
+    margin-top: 7rem;
+    margin-left: 29rem;
 }
 .wrapper {
-    width: 750px;
+    width: 46.875rem;
     margin-left: 3.5rem;
     margin-top: 3.5rem;
 
@@ -348,6 +348,7 @@ h1{
   display: inline-block;
   margin-left: 2rem;
   margin-top: 2rem;
+  width: 60%;
 }
 
 .dropdown-header {

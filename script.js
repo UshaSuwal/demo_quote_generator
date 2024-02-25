@@ -35,6 +35,7 @@ const quotes = {
     currentCategory = category;
     currentIndex = 0;
     renderQuote();
+    dropdownHeader.textContent = category.charAt(0).toUpperCase() + category.slice(1); // Capitalize the first letter
     dropdownList.style.display = 'none';
   }
   
