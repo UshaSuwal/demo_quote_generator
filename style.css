@@ -55,7 +55,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #72c6d1;
     position:absolute;
     left: 0;
     bottom: -6px;
@@ -99,11 +99,12 @@ h1{
 .category_container select {
     border: 1px solid #ccc;
     padding: 5px;
-    font-size: 17px;
+    font-size: 20px;
     border-radius: 18px;
     background-color: #A9F5FF;
     box-shadow: 0 8px 16px rgba(7, 7, 7, 0.6); 
     transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     outline: none;
     margin-left: 2rem;
     margin-top: 2rem;
@@ -112,7 +113,8 @@ h1{
 
 
   .category_container select:hover {
-    box-shadow: 0 6px 12px rgba(160, 132, 231, 0.8);
+    transform: scale(0.97);
+    box-shadow: 0 8px 16px rgba(7, 114, 123, 0.644);
   }
 
   /* ****** > slide ****** */
@@ -152,7 +154,7 @@ h1{
     text-transform: uppercase;
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
@@ -242,18 +244,18 @@ h1{
   }
   .button1{
     z-index: 20;
-    margin-top: -10.2rem;
+    margin-top: -10.3rem;
     background-color: rgba(74, 74, 74, 0.77);
     border: none;
     padding: 5px;
-    
+    border-radius: 0.5rem;
     transition: transform 0.4s ease-in-out;
   }
   .next {
-    margin-left: 13.9rem;
+    margin-left: 13.5rem;
   }
   .prev{
-    margin-left: 3.7rem;
+    margin-left: 3.9rem;
   }
   .next i, .prev i{
     width: 5rem;
@@ -268,7 +270,8 @@ h1{
   }
 
   .button1:hover {
-    background-color: rgba(112, 117, 119, 0.8);
+    background-color: rgba(10, 11, 11, 0.8);
+    transform: scale(1.1); 
     
   }
   .button1:active {
@@ -413,11 +416,11 @@ h1{
   }
 
   .dark-mode .category_container select {
-    box-shadow: 0 8px 16px rgba(249, 248, 248, 0.6);
+    box-shadow: 0 8px 16px rgba(249, 248, 248, 0.3);
   /* ----------------dark mode css------------ */
   }
 
   .dark-mode .category_container select:hover {
-    box-shadow: 0 6px 12px rgba(160, 132, 231, 0.8);
+    box-shadow: 0 8px 16px rgba(7, 114, 123, 0.644);
   }
   

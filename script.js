@@ -31,7 +31,8 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 const increaseFontBtn = document.getElementById('increaseFontBtn');
 const decreaseFontBtn = document.getElementById('decreaseFontBtn');
 const copyBtn = document.getElementById("copyBtn");
-const copiedText = document.getElementById("copiedText");
+const checkBtn = document.getElementById("checkBtn");
+
 
 categorySelect.addEventListener('change', (event) => {
     currentCategory = event.target.value;
@@ -152,13 +153,16 @@ function copyQuote() {
     
 
 copyBtn.addEventListener("click", function () {
-        // Simulate copying action
-    copiedText.innerText = "Copied!";
+    // Simulate copying action
+    checkBtn.style.display = "block";
+    copyBtn.style.display= "none"
+     // Display the check icon
 
-        // Clear the message after 2 seconds
+    // Hide the check icon after 2 seconds
     setTimeout(function () {
-        copiedText.innerText = "";
-        }, 1000);
+        checkBtn.style.display = "none";
+        copyBtn.style.display= "block"
+    }, 2000);
 });
 
 
