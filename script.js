@@ -3,17 +3,11 @@ const quotes = {
       "The only way to do great work is to love what you do. - Steve Jobs",
       "Believe you can and you're halfway there. - Theodore Roosevelt",
       "Strive not to be a success, but rather to be of value. - Albert Einstein",
-      "Science is a way of thinking much more than it is a body of knowledge. - Carl Sagan",
-      "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom. - Isaac Asimov",
-      "Somewhere, something incredible is waiting to be known. - Carl Sagan",
     ],
     science: [
       "Science is a way of thinking much more than it is a body of knowledge. - Carl Sagan",
       "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom. - Isaac Asimov",
       "Somewhere, something incredible is waiting to be known. - Carl Sagan",
-      "The only way to do great work is to love what you do. - Steve Jobs",
-      "Believe you can and you're halfway there. - Theodore Roosevelt",
-      "Strive not to be a success, but rather to be of value. - Albert Einstein",
     ]
   };
   
@@ -46,9 +40,7 @@ const quotes = {
     }
   });
   
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const randomBtn = document.getElementById('randomBtn');
+  
   const darkModeToggle = document.getElementById('darkModeToggle');
   const increaseFontBtn = document.getElementById('increaseFontBtn');
   const decreaseFontBtn = document.getElementById('decreaseFontBtn');
@@ -61,24 +53,23 @@ const quotes = {
       renderQuote();
   });
   
-  prevBtn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-          currentIndex--;
-          renderQuote();
-      }
-  });
-  
-  nextBtn.addEventListener('click', () => {
-      if (currentIndex < quotes[currentCategory].length - 1) {
-          currentIndex++;
-          renderQuote();
-      }
-  });
-  
-  randomBtn.addEventListener('click', () => {
-      currentIndex = Math.floor(Math.random() * quotes[currentCategory].length);
+  function getPreviousQuote() {
+    currentIndex =
+      (currentIndex - 1 + quotes[currentCategory].length) %
+      quotes[currentCategory].length;
       renderQuote();
-  });
+  }
+  
+  function getNextQuote() {
+    currentIndex = (currentIndex + 1) % quotes[currentCategory].length;
+    renderQuote();
+  }
+  
+  function getRandomQuote() {
+    currentIndex = Math.floor(Math.random() * quotes[currentCategory].length);
+    renderQuote();
+  }
+  
 
 // darkModeToggle.addEventListener('click', () => {
 //     darkModeEnabled = !darkModeEnabled;
