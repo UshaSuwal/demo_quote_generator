@@ -1,0 +1,259 @@
+@media screen and (max-width: 450px){
+
+.container {
+    flex-direction: column;
+
+}
+
+.header_container {
+    height: 17vh;
+    margin-top: -2rem;
+    position: static;
+}
+
+
+.menu {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+
+nav ul li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    margin-left: -0.5rem;
+    width: 17rem;
+
+}
+
+.sidebar {
+    width: 80%;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: none;
+    height: 30vh;
+}
+h1 {
+    margin-top: -2rem;
+    font-size: 2rem;
+
+}
+
+
+
+
+.image_container img {
+    display: none;
+}
+
+
+#customDropdown {
+    width: 70%;
+    z-index: 100;
+  }
+
+
+.switch{
+    margin-top: -0.6rem;
+    margin-right: -2rem;
+}
+
+.main-content {
+    width: 100%;
+    margin-top: -5rem;
+    margin-left: -0.6rem;
+    height: 50vh;
+    text-align: center;
+    align-content: center;
+}
+.wrapper {
+  width: 85%;
+  margin-left: 0.7rem;
+  margin-top: 5rem;
+}
+.quote-container{
+    height: 20vh;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+
+.navigate{
+    margin-left: 1.5rem;
+    margin-top: -5rem;
+}
+.button1{
+    width: 5.3rem;
+    margin-right: 1rem;
+}
+.interest{
+    flex-direction: row;
+    height:3vh;
+    padding: 5px;
+    margin-left: -17.3rem;
+    margin-top: -40rem;
+}
+.button2{
+    margin-top: -0.08rem;
+    margin-right:1.5rem ;
+    font-size: 0.9rem;
+}
+
+.slide_container{
+    margin-top: 27rem;
+    margin-left: -7rem;
+    width: 100%;
+    
+}
+
+
+.slide_container .slide {
+    
+    left: 180px;
+    
+}
+.slide_container .slide .text {
+    left: 25%;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width: 415px) and (max-width: 834px) {
+
+    .container {
+        flex-direction: column;
+    
+    }
+    
+    .header_container {
+        height: 17vh;
+        margin-top: -2rem;
+        position: static;
+    }
+    
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    
+    
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .logo {
+        margin-left: -0.5rem;
+        width: 17rem;
+    
+    }
+    
+    .sidebar {
+        width: 80%;
+        margin-top: 1rem;
+        text-align: center;
+        box-shadow: none;
+        height: 30vh;
+    }
+    h1 {
+        margin-top: -2rem;
+        font-size: 2rem;
+    
+    }
+    
+    
+    
+    
+    .image_container img {
+        display: none;
+    }
+    
+    
+    #customDropdown {
+        width: 70%;
+        z-index: 100;
+      }
+    
+    
+    .switch{
+        margin-top: -0.6rem;
+        margin-right: -2rem;
+    }
+    
+    .main-content {
+        width: 100%;
+        margin-top: -5rem;
+        margin-left: -0.6rem;
+        height: 50vh;
+        text-align: center;
+        align-content: center;
+    }
+    .wrapper {
+      width: 85%;
+      margin-left: 0.7rem;
+      margin-top: 5rem;
+    }
+    .quote-container{
+        height: 20vh;
+        padding-top: 30px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+    
+    
+    .navigate{
+        margin-left: 1.5rem;
+        margin-top: -5rem;
+    }
+    .button1{
+        width: 5.3rem;
+        margin-right: 1rem;
+    }
+    .interest{
+        flex-direction: row;
+        height:3vh;
+        padding: 5px;
+        margin-left: -19.6rem;
+        margin-top: -40rem;
+    }
+    .button2{
+        margin-top: -0.08rem;
+        margin-right:1.5rem ;
+        font-size: 0.9rem;
+    }
+    
+    .slide_container{
+        margin-top: 24.5rem;
+        margin-left: -8rem;
+        width: 100%;
+        
+    }
+    
+    
+    .slide_container .slide {
+        
+        left: 180px;
+        
+    }
+    .slide_container .slide .text {
+        left: 25%;
+    }
+    
+    
+    
+    
+    }
+    

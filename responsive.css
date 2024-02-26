@@ -1,327 +1,7 @@
 /* responsive.css */
 
-
- 
-
-  
-  
-  @media screen and (max-width: 429px) {
-    /* Adjust the width and margin for screens up to 480px width (e.g., smartphones) */
-    .container {
-        flex-direction: column;
-
-    }
-
-    .header_container {
-        height: auto;
-        margin-top: -2rem;
-        position: static;
-        
-
-    }
-
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-
-
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .logo {
-        margin-left: -0.5rem;
-        width: 15rem;
-
-    }
-
-    h1 {
-        margin-top: -2rem;
-
-    }
-
-    
-
-
-    .image_container img {
-        display: none;
-    }
-
-
-
-    .sidebar {
-        width: 80%;
-        margin-top: 1rem;
-        text-align: center;
-        box-shadow: none;
-    }
-
-    .main-content {
-        margin-top: -145%;
-        text-align: center;
-        align-content: center;
-        height: 80vh;
-    }
-
-    .wrapper {
-        width: 560px;
-        margin-top: -3.5rem;
-        margin-left: -0.5rem;
-
-    }
-
-    .quote-container {
-        font-size: 20px;
-        height: 20vh;
-        padding-top: 30px;
-        padding-right: 25px;
-        padding-bottom: 30px;
-        padding-left: 20px;
-    }
-    .interest{
-        flex-direction: row;
-        margin-left: -17rem;
-        margin-top: -43rem;
-        height: 6vh;
-        border-radius: 3px;
-    }
-    .button2{
-        margin-left: 1rem;
-        margin: 1rem;
-    }
-
-    .next{
-        margin-left: 0.4rem;
-        margin-top: -7.6rem;
-    }
-    .prev{
-        margin-top: -7.6rem; 
-        margin-left: 0rem;
-    }
-    .random{
-        margin-top: 0.4rem; 
-        margin-left: 0.6rem;
-        
-    }
-
-
-    #customDropdown {
-        width: 50%;
-      }
-
-    /* .dropdown-list{
-      position: absolute;
-      top: 0;
-      left: 100%; 
-      
-    } */
-
-    .switch{
-        margin-top: -2rem;
-        margin-right: -2rem;
-    }
-
-    .sidebar {
-        width: 80%;
-        margin-top: 1rem;
-        text-align: center;
-        box-shadow: none;
-    }
-    .wrapper {
-      width: 95%;
-      margin-top: 8rem;
-    }
-
-
-    .slide_container{
-        margin-top: 40rem;
-        margin-left: -7rem;
-        width: 100%;
-    }
-
-    
-    .slide_container .slide {
-        
-        left: 170px;
-        
-    }
-    .slide_container .slide .text {
-        left: 35%;
-    }
-
-
-
-
-
-    
-      
-  }
-
-
-
-
-  /* -------------------------iphone */
-
-  @media screen and (width: 430px) {
-    /* Adjust the width and margin for screens up to 480px width (e.g., smartphones) */
-    .container {
-        flex-direction: column;
-
-    }
-
-    .header_container {
-        height: auto;
-        margin-top: -2rem;
-        position: static;
-        
-
-    }
-
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-
-
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .logo {
-        margin-left: -0.5rem;
-        width: 15rem;
-
-    }
-
-    h1 {
-        margin-top: -2rem;
-
-    }
-
-    
-
-
-    .image_container img {
-        display: none;
-    }
-
-
-
-    .sidebar {
-        width: 80%;
-        margin-top: 1rem;
-        text-align: center;
-        box-shadow: none;
-    }
-
-    .main-content {
-        margin-top: -147%;
-        text-align: center;
-        align-content: center;
-        height: 80vh;
-    }
-
-    .wrapper {
-        width: 560px;
-        margin-top: -3.5rem;
-        margin-left: -0.5rem;
-
-    }
-
-    .quote-container {
-        font-size: 20px;
-        height: 20vh;
-        padding-top: 30px;
-        padding-right: 25px;
-        padding-bottom: 30px;
-        padding-left: 20px;
-    }
-    .interest{
-        flex-direction: row;
-        margin-left: -17.7rem;
-        margin-top: -45rem;
-        height: 6vh;
-        border-radius: 3px;
-    }
-    .button2{
-        margin-left: 1rem;
-        margin: 1rem;
-    }
-
-    .next{
-        margin-left: 1rem;
-        margin-top: -7.6rem;
-    }
-    .prev{
-        margin-top: -7.6rem; 
-        margin-left: 0rem;
-    }
-    .random{
-        margin-top: 0.4rem; 
-        margin-left: 1.8rem;
-        
-    }
-
-
-    #customDropdown {
-        width: 60%;
-      }
-
-    /* .dropdown-list{
-      position: absolute;
-      top: 0;
-      left: 100%; 
-      
-    } */
-
-    .switch{
-        margin-top: -2rem;
-        margin-right: -2rem;
-    }
-
-    .sidebar {
-        width: 80%;
-        margin-top: 1rem;
-        text-align: center;
-        box-shadow: none;
-    }
-    .wrapper {
-      width: 95%;
-      margin-top: 8rem;
-    }
-
-
-    .slide_container{
-        margin-top: 43rem;
-        margin-left: -7rem;
-        width: 100%;
-    }
-
-    
-    .slide_container .slide {
-        
-        left: 170px;
-        
-    }
-    .slide_container .slide .text {
-        left: 35%;
-    }
-
-
-}
-
 @media screen and (min-width: 1194px) and (max-width: 1220px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
+    
     
 
     #menu{
@@ -375,11 +55,7 @@
   }
 
   @media screen and (min-width: 1110px) and (max-width: 1194px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
-    
+   
 
     #menu{
         margin-top: 1rem;
@@ -432,10 +108,6 @@
   }
 
   @media screen and (min-width: 1049px) and (max-width: 1110px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
     
 
     #menu{
@@ -489,11 +161,7 @@
   }
 
   @media screen and (min-width: 973px) and (max-width: 1049px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
-    
+   
 
     #menu{
         margin-top: 1rem;
@@ -548,10 +216,7 @@
   }
 
   @media screen and (min-width: 904px) and (max-width: 973px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
+    
     
 
     #menu{
@@ -608,10 +273,7 @@
   }
 
   @media screen and (min-width: 820px) and (max-width: 904px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
+
     
     .container {
         flex-direction: column;
@@ -727,10 +389,7 @@
 
 
   @media screen and (min-width: 752px) and (max-width: 820px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
+
     
     .container {
         flex-direction: column;
@@ -845,10 +504,7 @@
   }
 
   @media screen and (min-width: 605px) and (max-width: 752px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
+    
     
     .container {
         flex-direction: column;
@@ -968,11 +624,7 @@
     
   }
 
-  @media screen and (min-width: 431px) and (max-width: 605px){
-    /* Adjust the width and margin for screens up to 768px width (e.g., tablets) */
-    body{
-        overflow:auto;
-    }
+  @media screen and (min-width: 451px) and (max-width: 605px){
     
     .container {
         flex-direction: column;
