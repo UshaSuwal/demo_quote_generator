@@ -6,10 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Quote Generator</title>
+    <title>Quote Quest</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="star.css" />
-    <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="dark.css" />
     <link rel="stylesheet" href="mob.css" />
     <link rel="stylesheet" href="responsive.css" />
@@ -39,6 +38,7 @@
       src="https://kit.fontawesome.com/14dea2b7a9.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="images\qicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="header_container">
@@ -83,7 +83,7 @@
 
       <!-- --------------------------------------left------------------------ -->
       <div class="sidebar">
-        <h1>QUOTE QUEST</h1>
+        <h1>QUOTE <span>QUEST</span> </h1>
         <p>
           Quotes at your fingertips <i class="fa-solid fa-hand-pointer"></i
           ><br />
@@ -98,9 +98,10 @@
             Choose a category
           </div>
           <ul class="dropdown-list" id="categoryList">
-            <li onclick="changeCategory('inspiration')"><a href="#">Inspiration</a></li>
+            <li onclick="changeCategory('motivational')"><a href="#">Motivational </a></li>
             <li onclick="changeCategory('science')"><a href="#">Science</a></li>
-            <!-- Add more categories as needed -->
+            <li onclick="changeCategory('time')"><a href="#">Time</a></li>
+            
           </ul>
         </div>
 
@@ -163,11 +164,9 @@
           </div>
         </div>
       </div>
-
-      <!-- <div id="copiedText"></div> -->
     </div>
 
     <script src="script.js"></script>
-    <script src="script2.js"></script>
+    <script src="typer.js"></script>
   </body>
 </html>

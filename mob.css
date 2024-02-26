@@ -128,7 +128,7 @@ h1 {
 }
 
 
-/* @media only screen and (min-width: 415px) and (max-width: 834px) {
+ @media only screen and (min-width: 415px) and (max-width: 834px) {
 
     .container {
         flex-direction: column;
@@ -255,5 +255,5 @@ h1 {
     
     
     
-    } */
+    } 
     

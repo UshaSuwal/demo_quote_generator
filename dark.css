@@ -108,4 +108,7 @@
     background-color: rgba(224, 241, 241, 0.5);
     color: black;
   }
+  .dark-mode h1 span{
+    color: rgb(121, 212, 248);
+  }
   
