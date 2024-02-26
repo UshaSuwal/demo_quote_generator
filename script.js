@@ -108,7 +108,7 @@ const quotes = {
   }
   
   increaseFontBtn.addEventListener('click', () => {
-      if (currentFontSize < 28) {
+      if (currentFontSize < 24) {
           currentFontSize += 1;
           quoteText.style.fontSize = `${currentFontSize}px`;
 authorNameContent.style.fontSize = `${currentFontSize}px`;

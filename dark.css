@@ -94,16 +94,18 @@
     background-color: rgba(169, 224, 232, 0.6);    
   }
 
-  .dark-mode .category_container select {
+  .dark-mode .dropdown-header {
     box-shadow: 0 8px 16px rgba(249, 248, 248, 0.3);
-    border-color: 1px solid #ccc;
-  /* ----------------dark mode css------------ */
   }
 
-  .dark-mode .category_container select:hover {
+  .dark-mode .dropdown-header:hover {
     box-shadow: 0 8px 16px rgba(7, 114, 123, 0.644);
   }
   .dark-mode .cursor {
     background-color: rgba(255, 251, 251, 0.7);
+  }
+  .dark-mode .button1:hover {
+    background-color: rgba(224, 241, 241, 0.5);
+    color: black;
   }
   

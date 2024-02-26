@@ -28,6 +28,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/14dea2b7a9.js"
       crossorigin="anonymous"
@@ -87,10 +94,12 @@
         </div>
 
         <div class="category_container" id="customDropdown">
-          <div class="dropdown-header" onclick="toggleDropdown()">Choose a category</div>
+          <div class="dropdown-header" onclick="toggleDropdown()">
+            Choose a category
+          </div>
           <ul class="dropdown-list" id="categoryList">
-            <li onclick="changeCategory('inspiration')">Inspiration</li>
-            <li onclick="changeCategory('science')">Science</li>
+            <li onclick="changeCategory('inspiration')"><a href="#">Inspiration</a></li>
+            <li onclick="changeCategory('science')"><a href="#">Science</a></li>
             <!-- Add more categories as needed -->
           </ul>
         </div>
@@ -114,14 +123,24 @@
 
         <div class="controls">
           <div class="navigate">
-          <button onclick="getPreviousQuote()" id="prevBtn" class="button1 prev">
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button onclick="getRandomQuote()" id="randomBtn" class="button1 random">Random</button>
-          <button onclick="getNextQuote()" id="nextBtn" class="button1 next">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
+            <button
+              onclick="getPreviousQuote()"
+              id="prevBtn"
+              class="button1 prev"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              onclick="getRandomQuote()"
+              id="randomBtn"
+              class="button1 random"
+            >
+              Random
+            </button>
+            <button onclick="getNextQuote()" id="nextBtn" class="button1 next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
 
           <div class="interest">
             <button class="read button2">
