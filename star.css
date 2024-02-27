@@ -4,6 +4,7 @@
     border-radius: 50%;
     animation: glow 1s infinite alternate;
     z-index: -1;
+    overflow: hidden;
   }
   
   @keyframes glow {
@@ -23,6 +24,7 @@
     background: radial-gradient(ellipse at bottom left, rgba(132, 152, 231,0.8), transparent); 
     filter: blur(50px); 
     z-index: -1;
+    overflow: hidden;
   }
   
   .circle-1 {

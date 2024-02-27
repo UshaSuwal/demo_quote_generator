@@ -111,4 +111,6 @@
   .dark-mode h1 span{
     color: rgb(121, 212, 248);
   }
-  
+  .dark-mode .interest{
+    box-shadow: 0 13px 20px rgba(248, 247, 247, 0.2);
+  }
